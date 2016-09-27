@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\title{CSCI 510, Fall 2016, Homework \# 1}
+\author{YOUR NAME HERE}
+\newcommand{\duple}[2]{\left[\begin{array}{c} #1\\#2\end{array}\right]}
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Transforming a NFA with $n$ states into a DFA may require as
+  many as $2^n$ states.  Give examples of NFAs with 2, 3, and 4 states
+  that {\em require} 4, 8, and 16 states in the equivalent DFA. Use
+  the alphabet $\Sigma=\{0,1\}$.
+\item
+  Let $Sigma=\left{\duple{0}{0},\duple{0}{0},\duple{0}{0},\duple{0}{0}\right}$
+\end{enumerate}
+\end{document}
