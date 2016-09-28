@@ -9,8 +9,8 @@
 \maketitle
 \begin{enumerate}
 \item Transforming a NFA with $n$ states into a DFA may require as
-  many as $2^n$ states.  Give examples of NFAs with 2, 3, and 4 states
-  that {\em require} 4, 8, and 16 states, respectively, in their
+  many as $2^n$ states.  Give examples of NFAs with 2 and 3 states
+  that {\em require} 4 and 8 states, respectively, in their
   equivalent DFAs. Use the alphabet $\Sigma=\{0,1\}$.  Explain why
   they require $2^n$ states and find the DFAs in question.
 \item
@@ -30,9 +30,18 @@
   but
   $\duple 01 \duple01\duple10\not\in C$ because the binary number 110
   is not three times the binary number 001.  Show that $C$ is
-  regular.  You may assume that the the reverse of a regular language
-  is regular.  The reverse of a language $A$ is the set of all strings
-  $w^R=w_n\ldots w_2w_1$ such that $w=w_1w_2\ldots w_n\in A$.
+  regular.
+
+  For this problem
+  you may assume the truth of the theorem that says
+  that the reverse of a regular language
+  is regular.  The reverse of a language $A$, written $A^R$,
+  is the set of all strings
+  $w^R=w_n\ldots w_2w_1$ such that $w=w_1w_2\ldots w_n\in A$,
+  \[
+  A^R = \{w^R |  \mbox{ $w^R=w_n\ldots w_2w_1$ where  $w=w_1w_2\ldots
+    w_n\in A$}\},
+  \]
 
 \item Let $\Sigma$ be as in the previous problem, and let
   \[
