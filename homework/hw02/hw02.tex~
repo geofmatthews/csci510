@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\title{CSCI 510, Fall 2016, Homework \# 1}
+\author{YOUR NAME HERE}
+\date{Due date: Tuesday, October 4, Midnight} 
+%\newcommand{\duple}[2]{\left[\begin{array}{c} #1\\#2\end{array}\right]}
+\newcommand{\duple}[2]{\left[{#1}\atop{#2}\right]}
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Transforming a NFA with $n$ states into a DFA may require as
+  many as $2^n$ states.  Give examples of NFAs with 2 and 3 states
+  that {\em require} 4 and 8 states, respectively, in their
+  equivalent DFAs. Use the alphabet $\Sigma=\{0,1\}$.  Explain why
+  they require $2^n$ states and find the DFAs in question.
+\item
+  Let
+  \[
+  \Sigma=\left\{\duple{0}{0},\duple{0}{1},\duple{1}{0},\duple{1}{1}\right\}.
+  \]
+  So $\Sigma$ contains all columns of 0s and 1s of height two.  A
+  string of symbols in $\Sigma$ give two rows of 0s and 1s.  Consider
+  each row to be a binary number and let
+  \[
+  C = \{w\in\Sigma^* | \mbox{the bottom row is three times the top
+    row}\}.
+  \]
+  For example, $\duple 00\duple 01 \duple 11 \duple 00\in C$ because
+  the binary number 0110 is three times the binary number 0010,
+  but
+  $\duple 01 \duple01\duple10\not\in C$ because the binary number 110
+  is not three times the binary number 001.  Show that $C$ is
+  regular.
+
+  For this problem
+  you may assume the truth of the theorem that says
+  that the reverse of a regular language
+  is regular.  The reverse of a language $A$, written $A^R$,
+  is the set of all strings
+  $w^R=w_n\ldots w_2w_1$ such that $w=w_1w_2\ldots w_n\in A$,
+  \[
+  A^R = \{w^R |  \mbox{ $w^R=w_n\ldots w_2w_1$ where  $w=w_1w_2\ldots
+    w_n\in A$}\},
+  \]
+
+\item Let $\Sigma$ be as in the previous problem, and let
+  \[
+  E=\{w\in\Sigma^*|\mbox{the bottom row of $w$ is the reverse of the
+    top row of $w$}\}.
+    \]
+    Show that $E$ is not regular.
+\end{enumerate}
+\end{document}

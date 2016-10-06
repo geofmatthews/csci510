@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\title{CSCI 510, Fall 2016, Homework \# 2}
+\author{YOUR NAME HERE}
+\date{Due date: Friday, October 21, Midnight} 
+%\newcommand{\duple}[2]{\left[\begin{array}{c} #1\\#2\end{array}\right]}
+\newcommand{\duple}[2]{\left[{#1}\atop{#2}\right]}
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Let $A/B=\{w| \mbox{$wx\in A$ for some $x\in B$}\}$.  Show that
+  if $A$ is context free and $B$ is regular then $A/B$ is regular.
+
+\item For any language $A$, let $\mbox{\sl suffix}(A) =
+  \{v|\mbox{$uv\in A$ for some string $u$}\}$.  Show that the class of
+  context-free languages is closed under the {\sl suffix} operation.
+
+\item Show that if $G$ is a CFG in Chomsky normal form, then any
+  string $w\in L(G)$ of length $n\geq 1$, exactly $2n-1$ steps are
+  required for any derivation of $w$.  Give a proof by induction.
+\end{enumerate}
+\end{document}
