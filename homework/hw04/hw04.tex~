@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\title{CSCI 510, Fall 2016, Homework \# 3}
+\author{YOUR NAME HERE}
+\date{Due date: Wednesday, October 26, Midnight} 
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Give an implementation-level description of a Turing machine
+  that recognizes the language $A$ over the alphabet $\{0,1\}$, where
+  \[
+A=  \{w | \mbox{$w$ does not contain the same number of 0s and 1s}\}
+\]
+
+\item Show that a language is decidable iff some enumerator enumerates
+  the language in the standard string order.
+
+\item A {\bf\em queue automaton} is like a push-down automaton except
+  that the stack is replaced by a queue.  A {\bf\em queue} is a tape
+  allowing symbols to be written only on the left-hand end and read
+  only at the right-hand end.  Each write operations (we'll call it a
+  {\em push}) adds a symbol to the left-hand end of the queue and each
+  read operation (we'll call it a {\em pull}) reads and removes a
+  symbol at the right-hand end.  As with a {\sf PDA}, the input is
+  placed on a separate read-only input tape, and the head on the input
+  tape can move only from left to right.  The input tape contains a
+  cell with a blank symbol following the input, so that the end of the
+  input can be detected.  A queue automaton accepts its input by
+  entering a special accept state at any time.  Show that a language
+  can be recognized by a deterministic queue automaton iff the
+  language is Turing-recognizable. 
+
+\end{enumerate}
+\end{document}
