@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\title{CSCI 510, Fall 2016, Homework \# 5}
+\author{YOUR NAME HERE}
+\date{Due date: Wednesday, November 30, Midnight} 
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Show that $A$ is Turing-recognizable iff $A\leq_m A_{TM}$.
+
+\item Let $J=\{w\ |\ \mbox{either $w=0x$ for some $x\in A_{TM}$, or
+  $w=1y$ for some $y\in \overline{A_{TM}}$}\}$.  Show that neither $J$
+  nor $\overline{J}$ is Turing-recognizable.
+
+\item Let
+  \[
+  f(x) = \left\{\begin{array}{ll}
+  3x+1 & \mbox{ for odd $x$}\\
+  x/2 & \mbox{ for even $x$}
+  \end{array}
+  \right.
+  \]
+for any natural number $x$.  If you start with a natural number $x$
+and iterate  $f$, you obtain a sequence, $x, f(x),
+f(f(x)),\ldots$ Stop if you ever hit 1.  For example, if $x=17$, you
+ge the sequence $17,52,26,13,40,20,10,5,16,8,4,2,1$.  Extensive
+computer tests have shown that every starting point between 1 and a
+very large positive integer gives a sequence that ends in 1.  But the
+question of whether all positive starting points end up at 1 is
+unsolved;  it is called the $3x+1$ problem.
+
+Suppose that $A_{TM}$ were decidable by a TM $H$.  Use $H$ to describe
+a TM that is guaranteed to state the answer to the $3x+1$ problem.
+
+\item Let $T=\{\langle M \rangle | \mbox{$M$ is a TM that accepts
+  $w^R$ whenever it accepts $w$}\}$.  Show that $T$ is undecidable.
+
+\item Show that the Post Correspondence Problem is decidable over the
+  unary alphabet $\Sigma = \{1\}$.
+
+\item Prove that there exists an undecidable subset of $\{1\}^*$.
+
+
+\end{enumerate}
+\end{document}

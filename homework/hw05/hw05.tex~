@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\title{CSCI 510, Fall 2016, Homework \# 4}
+\author{YOUR NAME HERE}
+\date{Due date: Wednesday, November 2, Midnight} 
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+  \item Let $A$ be a Turing-recognizable language consisting of Turing
+    machines, $\{\langle M_1 \rangle, \langle M_2\rangle, \ldots\}$,
+    where every $M_i$ is a decider.  Prove that some decidable
+    language $D$ is not decided by any decider $M_i$ whose description
+    appears in $A$.
+
+    \item Let $A= \{\langle R\rangle | $ $R$ is a regular
+      expression describing a language containing at least one string
+      $w$ that has  $111$  as a substring ({\em i.e.} $w=x111y$ for
+      some $x$ and $y$ $\}$.  Show that $A$ is decidable.
+
+    \item Let $A= \{\langle R, S\rangle |$ $R$ and $S$ are regular
+      expressions and $L(R) \subseteq L(S)\}$.  Show that $A$ is
+      decidable. 
+
+\end{enumerate}
+\end{document}
